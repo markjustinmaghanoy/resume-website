@@ -1,0 +1,307 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Roboto,sans-serif;
+    text-decoration: none;
+    text-align: center;
+}
+body{
+    overflow-x: hidden;
+    color: white;
+}
+.hero-header{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: url(images/bg.jpg);
+    background-size: cover;
+}
+.wrapper{
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header{
+    padding: 40px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo i{
+    height: 45px;
+    width: 45px;
+    background-color: silver;
+    border-radius: 50%;
+    color: black;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.logo .logo-text{
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+nav .togglebtn{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 45px;
+    right: 3%;
+    z-index: 5;
+    cursor: pointer;
+    display: none;
+}
+nav .togglebtn span{
+    display: block;
+    background-color: #fff;
+    margin: 5px 0px;
+    width: 50%;
+    height: 3px;
+    transition: 0.3s;
+    transition-property: transform, opacity;
+}
+nav .navlinks{
+    list-style-type: none;
+}
+nav .navlinks li{
+    display: inline-block;
+}
+nav .navlinks li a{
+    display: inline-block;
+    color: #e5e5e5;
+    margin-right: 2.5rem;
+}
+nav .navlinks li a:hover{
+    color: #007ced;
+    transition: .5s;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem;
+}
+.container .hero-pic{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 15px solid #444;
+    box-shadow: 5px 7px 25px rgba(0,0,0,0.5);
+}
+.hero-pic img{
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+}
+.hero-pic img:hover{
+    transform: scale(1.2);
+}
+.hero-text{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.hero-text h2{
+    color: #e5e5e5;
+    font-size: 20px;
+    text-align: center;
+}
+.hero-text h1{
+    color: #fff;
+    font-size: 3rem;
+}
+.hero-text .social i{
+    color: #e5e5e5;
+    font-size: 20px;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+.hero-text .social i:hover{
+    color: #007ced;
+    transform: rotate(360deg);
+}
+h1{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 50px;
+}
+.skills-area{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20%;
+}
+.skill{
+    position: relative;
+    margin-bottom: 40px;
+}
+.skill-title{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.skill-bar{
+    width: 100%;
+    background: rgba(255,255,255,0.6);
+    height: 40px;
+    z-index: -1;
+    border-radius: 50px;
+    position: absolute;
+}
+.skill-fill{
+    background: #007ced;
+    height: 40px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+    overflow: hidden;
+}
+.skill-percent{
+    font-size: 20px;
+}
+.html{
+    animation: html 2s;
+    width: 50%;
+}
+.css{
+    animation: css 2s;
+    width: 80%;
+}
+.js{
+    animation: js 2s;
+    width: 70%;
+}
+@keyframes html{
+    from{
+        width: 0;
+    }
+    to{
+        width: 50%;
+    }
+}
+@keyframes css{
+    from{
+        width: 0;
+    }
+    to{
+        width: 80%;
+    }
+}
+@keyframes js{
+    from{
+        width: 0;
+    }
+    to{
+        width: 70%;
+    }
+}
+main.row{
+    display: grid;
+}
+.col .contents{
+    padding: 0px 30px;
+    border-left: 2px solid white;
+}
+.col .contents .box{
+    position: relative;
+    padding: 20px;
+    border: 1px solid white;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 20px;
+}
+.col .contents .box:hover{
+    box-shadow: 0px 3px 12px 0px #ccc;
+    border: 1px solid transparent;
+}
+p{
+    font-size: 20px;
+}
+.col1 .contents1 .box1{
+    position: relative;
+    padding: 20px;
+    border: 1px solid white;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 20px;
+}
+.col1 .contents1 .box1:hover{
+    box-shadow: 0px 3px 12px 0px #ccc;
+    border: 1px solid transparent;
+}
+@media only screen and (max-width: 750px){
+    .skill-area{
+        padding: 0 5%;
+    }
+}
+@media(max-width:930px){
+    nav .togglebtn{
+        display: initial;
+    }
+    .click{
+        top: 45px;
+    }
+    .click span{
+        position: absolute;
+        margin-top: 12px;
+    }
+    .click span:first-child{
+        transform: rotate(-45deg);
+    }
+    .click span:nth-child(2){
+        opacity: 0;
+        margin: 0;
+    }
+    .click span:last-child{
+        transform: rotate(45deg);
+        top: 0;
+    }
+    nav .navlinks{
+        position: absolute;
+        top: 110px;
+        right: -60%;
+        bottom: 0;
+        width: 60%;
+        height: 100vh;
+        background-color: #222;
+        z-index: 3;
+        box-shadow: 5px 13px 30px rgba(0,0,0,0.1);
+        transition: 0.5s;
+        padding: 25px 0px;
+    }
+    nav .navlinks li{
+        display: block;
+    }
+    nav .navlinks li a{
+        display: block;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    nav .navlinks.open{
+        right: 0;
+    }
+}
+@media(max-width:768px){
+    .container{
+        flex-direction: column;
+        padding-top: 2rem;
+    }
+    .hero-text{
+        padding: 40px 0px;
+    }
+}

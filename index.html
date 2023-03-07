@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/404ab977b8.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Roboto:ital,wght@0,100;0,500;1,500&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-m"></i>
+                    <div class="logo-text">My Personalities</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li class="click"><a href="index.html">Home</a></li>
+                        <li class="click"><a href="education.html">Education</a></li>
+                        <li class="click"><a href="skills.html">Skills</a></li>
+                        <li class="click"><a href="experience.html">Experience</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="images/me.jpg" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h1>Mark Justin Maghanoy</h1>
+                    <h2>Web Developer || Photographer</h2>
+                    <br>
+                    <div class="social">
+                        <a href="https://www.facebook.com/markjustine.maghanoy.9"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/mjmm0626/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click",function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+    </script>
+    
+</body>
+</html>
